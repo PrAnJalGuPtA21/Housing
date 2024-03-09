@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Navbar from "./components/Navbar/Navbar"
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Home } from "@mui/icons-material"
+import Home from "./components/Home/Home"
 import Feature from "./components/Features/Feature"
 import Pricing from "./components/Pricing/Pricing"
 
@@ -11,9 +11,9 @@ function App() {
     <BrowserRouter>
     <Navbar/>
       <Routes>
-        <Route path="/home" element={<Home/>}/>
-        <Route path="/home" element={<Feature/>}/>
-        <Route path="/home" element={<Pricing/>}/>
+        <Route path="home" element={<Home/>}/>
+        <Route path="feature" element={<Feature/>}/>
+        <Route path="pricing" element={<Pricing/>}/>
       </Routes>
     </BrowserRouter>
   )
