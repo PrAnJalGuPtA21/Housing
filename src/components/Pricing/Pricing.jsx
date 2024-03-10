@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import pic from "../../assets/Feature.jpg"
 
 const Pricing = () => {
@@ -50,7 +51,9 @@ const Pricing = () => {
                   <li>Area and Location</li>
                   <li>Phone and email Support</li>
                 </ul>
-                <button type="button" className="w-100 btn btn-lg btn-primary" style={{ fontSize: "20px", height: "40px" }}>Get started</button>
+                <button type="button" className="w-100 btn btn-lg btn-primary" style={{ fontSize: "20px", height: "40px" }}>
+                  <NavLink to="pro" style={{textDecoration:"none", color:"white"}}>Get Started</NavLink>
+                </button>
               </div>
             </div>
           </div>
@@ -67,7 +70,9 @@ const Pricing = () => {
                   <li>Pricing and Phone support</li>
                   <li>Brokerage Support</li>
                 </ul>
-                <button type="button" className="w-100 btn btn-lg btn-primary" style={{ fontSize: "20px", height: "40px" }}>Contact us</button>
+                <button type="button" className="w-100 btn btn-lg btn-primary" style={{ fontSize: "20px", height: "40px" }}>
+                <NavLink to="advance" style={{textDecoration:"none", color:"white"}}> Let's Go </NavLink>
+                </button>
               </div>
             </div>
           </div>
