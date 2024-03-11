@@ -34,7 +34,9 @@ const Pricing = () => {
                   <li>Area and Location</li>
                   <li>Help center access</li>
                 </ul>
-                <button type="button" className="w-100 btn btn-lg btn-outline-primary" style={{ fontSize: "20px", height: "40px" }}>Sign up for free</button>
+                <button type="button" className="w-100 btn btn-lg btn-primary" style={{ fontSize: "20px", height: "40px" }}>
+                  <NavLink to="/free" style={{ textDecoration: "none", color: "white", width: "100%" }}>Go for free</NavLink>
+                </button>
               </div>
             </div>
           </div>
@@ -51,8 +53,8 @@ const Pricing = () => {
                   <li>Area and Location</li>
                   <li>Phone and email Support</li>
                 </ul>
-                <button type="button" className="w-100 btn btn-lg btn-primary" style={{ fontSize: "20px", height: "40px"}}>
-                  <NavLink to="/pro" style={{textDecoration:"none", color:"white" ,width:"100%"}}>Get Started</NavLink>
+                <button type="button" className="w-100 btn btn-lg btn-primary" style={{ fontSize: "20px", height: "40px" }}>
+                  <NavLink to="/pro" style={{ textDecoration: "none", color: "white", width: "100%" }}>Get Started</NavLink>
                 </button>
               </div>
             </div>
@@ -71,7 +73,7 @@ const Pricing = () => {
                   <li>Brokerage Support</li>
                 </ul>
                 <button type="button" className="w-100 btn btn-lg btn-primary" style={{ fontSize: "20px", height: "40px" }}>
-                <NavLink to="/advance" style={{textDecoration:"none", color:"white"}}> Let's Go </NavLink>
+                  <NavLink to="/advance" style={{ textDecoration: "none", color: "white" }}> Let's Go </NavLink>
                 </button>
               </div>
             </div>

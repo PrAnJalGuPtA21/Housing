@@ -8,6 +8,8 @@ import Pro from "./components/Pro"
 import Advance from "./components/Advance"
 import Signup from "./components/SignUp/Signup"
 import SIgnIn from "./components/SignIn/SIgnIn"
+import Free from "./components/Free"
+import Footer from "./components/Footer/Footer"
 
 function App() {
 
@@ -19,10 +21,12 @@ function App() {
         <Route path="/feature" element={<Feature/>}/>
         <Route path="/pricing" element={<Pricing/>}/>
         <Route path="/pro" element={<Pro/>}/>
+        <Route path="/free" element={<Free/>}/>
         <Route path="/advance" element={<Advance/>}/>
         <Route path="/signup" element={<Signup/>}/>
         <Route path="/signin" element={<SIgnIn/>}/>
       </Routes>
+      <Footer/>
     </BrowserRouter>
   )
 }

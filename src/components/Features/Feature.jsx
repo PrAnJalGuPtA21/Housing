@@ -69,7 +69,6 @@ const Feature = () => {
             </svg>
           </div>
         </div>
-
         <hr className="featurette-divider" />
       </div>
     </div>

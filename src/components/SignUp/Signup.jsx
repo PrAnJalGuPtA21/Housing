@@ -4,15 +4,31 @@ import image1 from "../../assets/google.png"
 
 
 import "./Signup.css"
+import { useState } from "react"
 const Signup = () => {
+
+const [data, setData] = useState({});
+
+
+const handleChange=(e)=>{
+    setData({...data , [e.target.name] : e.target.value });
+    console.log(data);
+}
+
+const handleSubmit=(e)=>{
+    e.preventDefault();
+    console.log(data)
+}
+
+
     return (
         <div style={{ position: "relative", width: "100%", justifyContent: "center", display: "flex", alignItems: "center" }}>
             <img src={backpic} alt="backpic" style={{ width: "100%" }} />
-            <form className="glass" style={{ disply: "flex", flexDirection: "column", position: "absolute" }}>
+            <form onSubmit={handleSubmit} className="glass" style={{ disply: "flex", flexDirection: "column", position: "absolute" }}>
                 <p style={{ display: "flex", height: "45px", width: "100%", justifyContent: "center", fontSize: "35px", top: "2px", color: "white" ,marginTop:"20px"}}>Sign UP </p>
                 <div className="inputs" style={{margin:"40px",display:"flex" , justifyContent:"center",flexDirection:"column" , padding:"20px"}}>
-                    <input type="text" name="username" placeholder="username" value="" style={{ marginBottom:"20px",borderRadius: "50px", display: "flex", justifyContent: "center", padding: "10px", background: "transparent", color: "white", border: "1px solid grey" }} />
-                    <input type="text" name="username" placeholder="Password" value="" style={{ margin:"2px",borderRadius: "50px", display: "flex", justifyContent: "center", padding: "10px", background: "transparent", color: "white", border: "1px solid grey" }} />
+                    <input type="text" name="username" placeholder="username"  onChange={handleChange} style={{ marginBottom:"20px",background:"transparent", borderRadius: "50px", display: "flex", justifyContent: "center", padding: "10px", color: "white", border: "1px solid grey" }} autoComplete="off"/>
+                    <input type="text" name="pass" placeholder="Password"  onChange={handleChange} style={{ margin:"2px",background:"transparent", borderRadius: "50px", display: "flex", justifyContent: "center", padding: "10px",  color: "white", border: "1px solid grey" }} autoComplete="off"/>
                 </div>
                 <button style={{color:"white" , background:"transparent", display:"flex" , justifyContent:"center" , width:"200px" , height:"40px" , alignItems:"center" , left:"90px"}}>
                     <NavLink to="/" style={{color:"white", textDecoration:"none"}}>Sign Up</NavLink> 
