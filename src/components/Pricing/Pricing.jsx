@@ -18,8 +18,8 @@ const Pricing = () => {
         <div className="card3" style={{ color: "white" , position:"absolute",backgroundColor:"yellow",margin:"0px",top:"550px",width:"15%" , right:"350px" ,height:"300px"}}>
           Advance Plan
         </div> */}
-      <p style={{ position: "absolute", color: "white", top: "550px", fontSize: "40px" }}>Our Plans and Pricings..... </p>
-      <div className="div" style={{ position: "absolute", top: "650px", width: "800px" }}>
+      <p style={{ position: "absolute", color: "white", top: "490px", fontSize: "40px" }}>Our Plans and Pricings..... </p>
+      <div className="div" style={{ position: "absolute", top: "570px", width: "800px" }}>
         <div className="row row-cols-1 row-cols-md-3 mb-3 text-center ">
           <div className="col">
             <div className="card mb-4 rounded-3 shadow-sm">
@@ -51,8 +51,8 @@ const Pricing = () => {
                   <li>Area and Location</li>
                   <li>Phone and email Support</li>
                 </ul>
-                <button type="button" className="w-100 btn btn-lg btn-primary" style={{ fontSize: "20px", height: "40px" }}>
-                  <NavLink to="pro" style={{textDecoration:"none", color:"white"}}>Get Started</NavLink>
+                <button type="button" className="w-100 btn btn-lg btn-primary" style={{ fontSize: "20px", height: "40px"}}>
+                  <NavLink to="/pro" style={{textDecoration:"none", color:"white" ,width:"100%"}}>Get Started</NavLink>
                 </button>
               </div>
             </div>
@@ -71,7 +71,7 @@ const Pricing = () => {
                   <li>Brokerage Support</li>
                 </ul>
                 <button type="button" className="w-100 btn btn-lg btn-primary" style={{ fontSize: "20px", height: "40px" }}>
-                <NavLink to="advance" style={{textDecoration:"none", color:"white"}}> Let's Go </NavLink>
+                <NavLink to="/advance" style={{textDecoration:"none", color:"white"}}> Let's Go </NavLink>
                 </button>
               </div>
             </div>

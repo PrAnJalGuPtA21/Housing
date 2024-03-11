@@ -6,6 +6,8 @@ import Feature from "./components/Features/Feature"
 import Pricing from "./components/Pricing/Pricing"
 import Pro from "./components/Pro"
 import Advance from "./components/Advance"
+import Signup from "./components/SignUp/Signup"
+import SIgnIn from "./components/SignIn/SIgnIn"
 
 function App() {
 
@@ -13,11 +15,13 @@ function App() {
     <BrowserRouter>
     <Navbar/>
       <Routes>
-        <Route path="home" element={<Home/>}/>
-        <Route path="feature" element={<Feature/>}/>
-        <Route path="pricing" element={<Pricing/>}/>
-        <Route path="pro" element={<Pro/>}/>
-        <Route path="advance" element={<Advance/>}/>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/feature" element={<Feature/>}/>
+        <Route path="/pricing" element={<Pricing/>}/>
+        <Route path="/pro" element={<Pro/>}/>
+        <Route path="/advance" element={<Advance/>}/>
+        <Route path="/signup" element={<Signup/>}/>
+        <Route path="/signin" element={<SIgnIn/>}/>
       </Routes>
     </BrowserRouter>
   )
